@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Computer Science Department</title>
+    <!-- <link rel="stylesheet" href="styles/normalize.css" /> -->
+    <link rel="stylesheet" href="styles/TA.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img id="logo" src="images/logo.png" width="100px" height="100px" />
+        <h2 id="heading">Computer Science Department</h2>
+        <nav id="nav_menu">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li>
+              <a href="description.html">Program Description</a>
+            </li>
+            <li><a href="TA.html"  class="current">TA Application</a></li>
+            <li><a href="GPA.html">GPA Calculator</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <form name="myform" action="survey_data.html" method="get">
+          <h1 id="form-header">Teaching Assistant Application Form</h1>
+          <h2 id="formdesc">Application Information</h2>
+
+          <label>First Name: </label>
+          <input type="text" id="firstName" name="firstname" required /> <br />
+          <label>Last Name: </label>
+          <input type="text" id="lastName" name="lastname" required /> <br />
+          <label>Student ID: </label>
+          <input type="text" id="studentId" id="studentid" required /> <br />
+          <label>Gender: </label>
+          M <input type="radio" name="gender" id="Male" value="Male" required /> F
+          <input type="radio" name="gender" id="Female" value="Female" required />
+          <br />
+          <label>GPA: </label>
+          <input type="text" id="gpa" name="gpa" required /> <br />
+          <div class="textareafield">
+            <label>Comments: </label>
+            <textarea id="comments" name="comments" rows="6" required></textarea> <br />
+          </div>
+
+          <h2 id="formdesc">Thank you for completing the application!</h2>
+          <div class="buttonsdiv">
+            <input
+              class="buttons"
+              type="submit"
+              name="button"
+              id="button"
+              value="Submit"
+            />
+            <input class="buttons" type="reset" name="reset" id="reset" />
+          </div>
+        </form>
+      </main>
+      <footer>
+        <span id="first-box-footer">
+          <p>
+            7400 East Drive 2023 <br />
+            Montgomery, AL 36117 <br />
+            Local: 334-244-3000 <br />
+            Toll-Free: 800-227-2649
+          </p>
+        </span>
+        <span id="second-box-footer">
+          &copy; 2020 Sai Revanth Varma Rudraraju
+        </span>
+        <span id="third-box-footer">
+          <img id="twt" src="images/twt.jpeg" />
+          <img src="images/pinterest-logo.png" />
+          <img id="fb" src="images/facebook-social-network-logo.png" />
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Computer Science Department</title>
+    <!-- <link rel="stylesheet" href="styles/normalize.css" /> -->
+    <link rel="stylesheet" href="styles/GPA.css" />
+    <script src="GPA.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img id="logo" src="images/logo.png" width="100px" height="100px" />
+        <h2 id="heading">Computer Science Department</h2>
+        <nav id="nav_menu">
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li>
+              <a href="description.html">Program Description</a>
+            </li>
+            <li><a href="TA.html">TA Application</a></li>
+            <li><a href="GPA.html" class="current">GPA Calculator</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="maincontent">
+          <h1 id="form-header">Find Your GPA!</h1>
+          <p>
+            Enter the number of credit hours for each course, and the letter
+            grade for each of them. At least 3 courses should be entered.
+          </p>
+          <div class="labels">
+            <h3 class="creditHours">Credit Hours</h3>
+            <h3 class="grades">Grade</h3>
+          </div>
+          <form id="gpaform">
+          <label>Course 1:</label>
+          <input type="number" id="h1" min="0" max="100" required/>
+
+          <input type="text" id="g1" maxlength="1" required/><br />
+
+          <label>Course 2:</label>
+          <input type="number" id="h2" min="0" max="100" required/>
+
+          <input type="text" id="g2" maxlength="1" required/><br />
+
+          <label>Course 3:</label>
+          <input type="number" id="h3" min="0" max="100" required/>
+
+          <input type="text" id="g3" maxlength="1" required/><br />
+
+          <label>Course 4:</label>
+          <input type="number" id="h4" min="0" max="100" />
+
+          <input type="text" id="g4" maxlength="1" /><br />
+
+          <label>Course 5:</label>
+          <input type="number" id="h5" min="0" max="100" />
+
+          <input type="text" id="g5" maxlength="1" /><br />
+
+          <label>Avg GPA:</label>
+          <input type="number" id="avgGPA" value="" disabled /><br />
+
+          <div class="buttonsdiv">
+            <input class="buttons" type="button" onclick="calculateGPA()" value="Submit" />
+            <input class="buttons" type="reset" name="reset" id="reset" />
+          </div>
+        </form>
+        </div>
+      </main>
+      <footer>
+        <span id="first-box-footer">
+          <p>
+            7400 East Drive 2023 <br />
+            Montgomery, AL 36117 <br />
+            Local: 334-244-3000 <br />
+            Toll-Free: 800-227-2649
+          </p>
+        </span>
+        <span id="second-box-footer">
+          &copy; 2020 Sai Revanth Varma Rudraraju
+        </span>
+        <span id="third-box-footer">
+          <img id="twt" src="images/twt.jpeg" />
+          <img src="images/pinterest-logo.png" />
+          <img id="fb" src="images/facebook-social-network-logo.png" />
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>
